@@ -44,6 +44,6 @@ class ConkyAll < Formula
 
   test do
       system "conky", "-t", "'${exec echo \"test\" > test.txt && killall -9 conky}'"
-      [ -f text.txt ] && echo "CONKY-ALL HAS BEEN INSTALLED! Have fun!"
+      system "[", "-f", "text.txt", "]", "&&", "echo", "\"CONKY-ALL HAS BEEN INSTALLED! Have fun!\""
   end
 end
