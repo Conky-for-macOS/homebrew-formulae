@@ -13,6 +13,6 @@ class Libircclient < Formula
   def install
     system "./configure --prefix=#{prefix} --enable-shared"
     system "make", "-j4"
-    system "make install"
+    system "make", "install"
   end
 end
