@@ -27,7 +27,7 @@ class Xmms2 < Formula
   def install
     # Some dependencie on s4 which doesn't build
     system "git", "clone", "https://github.com/xmms2/s4", "src/lib/s4"
-    system "./waf", "configure", "--prefix=#{prefix}", "--without-optional=s4"
+    system "./waf", "configure", "--prefix=#{prefix}"
     system "./waf", "build"
     system "./waf", "install"
   end
