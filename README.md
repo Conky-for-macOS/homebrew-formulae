@@ -1,4 +1,4 @@
-# Conky Homebrew Formulae
+# Conky Homebrew Formulae [![Build Status](https://travis-ci.org/Conky-for-macOS/homebrew-formulae.svg?branch=master)](https://travis-ci.org/Conky-for-macOS/homebrew-formulae)
 Formulae for supporting `conky-all` on macOS.
 
 # Additional Taps compared to original Homebrew-Core
