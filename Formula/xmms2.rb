@@ -10,6 +10,7 @@ class Xmms2 < Formula
   version '0.8.1'
 
   # depends_on 'cmake' => :build
+  depends_on 'pkg-config' => :build
   # depends_on :x11 # if your formula requires any X11/XQuartz components
   # ENV.libxml2
   depends_on 'glib'
