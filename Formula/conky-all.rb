@@ -13,7 +13,7 @@ class ConkyAll < Formula
   depends_on "lua"
   depends_on "imlib2"
   depends_on "pkg-config"
-#  depends_on "libircclient"
+  depends_on "libircclient"
   depends_on "libmicrohttpd"
   depends_on "libical"
   depends_on "cairo-for-conky"
