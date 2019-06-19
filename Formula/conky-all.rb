@@ -16,7 +16,7 @@ class ConkyAll < Formula
   depends_on "libircclient"
   depends_on "libmicrohttpd"
   depends_on "libical"
-  depends_on "cairo-for-conky"
+  depends_on "cairo-xlib"
   depends_on "mysql"
   depends_on "librsvg"
   
