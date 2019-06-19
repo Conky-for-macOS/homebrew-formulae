@@ -1,11 +1,32 @@
+# This script should test compilation of conky and conky-all
+# xcode 9.4 and xcode 10.1
+
 language: c
-os: osx
-osx_image: xcode9.4
+matrix:
+    include:
+    - os: osx
+      osx_image: xcode9.4
+      script:
+        - brew install conky
+
+    - os: osx
+      osx_image: xcode9.4
+      script:
+        - brew install conky-all
+      
+    - os: osx
+      osx_image: xcode10.1
+      script:
+        - brew install conky
+
+    - os: osx
+      osx_image: xcode10.1
+      script:
+        - brew install conky-all      
 
 before_install:
-# install dependancies
+# install our homebrew tap
   - brew tap Conky-for-macOS/homebrew-formulae
-  - brew install conky
 
 script:
 # test build (avoid TravisCI failing for no reason.)
