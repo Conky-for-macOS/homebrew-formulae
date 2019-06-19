@@ -1,4 +1,4 @@
-class CairoForConky < Formula
+class CairoXlib < Formula
   desc "Vector graphics library with cross-device output support"
   homepage "https://cairographics.org/"
   url "https://cairographics.org/releases/cairo-1.16.0.tar.xz"
