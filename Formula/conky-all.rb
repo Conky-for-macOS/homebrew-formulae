@@ -11,6 +11,7 @@ class ConkyAll < Formula
   depends_on "freetype"
   depends_on "gettext"
   depends_on "lua"
+  depends_on "curl"
   depends_on "imlib2"
   depends_on "pkg-config"
   depends_on "libircclient"
@@ -38,6 +39,7 @@ class ConkyAll < Formula
               -DBUILD_RSS=ON                        \
               -DBUILD_IRC=ON                        \
               -DBUILD_PULSEAUDIO=ON                 \
+              -DBUILD_CURL=ON                       \
               -DCMAKE_BUILD_TYPE=Release            \
               -DCMAKE_INSTALL_PREFIX=#{prefix}"
       
