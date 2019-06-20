@@ -19,6 +19,8 @@ class CairoXlib < Formula
   depends_on "pixman"
   depends_on :x11
 
+  keg_only, :because => "A cairo installation may already be present."
+
   def install
     if build.head?
       ENV["NOCONFIGURE"] = "1"
