@@ -19,6 +19,7 @@ class ConkyAll < Formula
   depends_on "cairo-xlib"
   depends_on "mysql"
   depends_on "librsvg"
+  depends_on "pulseaudio"
   
   def install
       mkdir "build"
@@ -36,6 +37,7 @@ class ConkyAll < Formula
               -DBUILD_ICONV=ON                      \
               -DBUILD_RSS=ON                        \
               -DBUILD_IRC=ON                        \
+              -DBUILD_PULSEAUDIO=ON                 \
               -DCMAKE_BUILD_TYPE=Release            \
               -DCMAKE_INSTALL_PREFIX=#{prefix}"
       
