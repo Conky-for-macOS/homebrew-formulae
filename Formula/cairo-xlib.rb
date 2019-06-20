@@ -19,8 +19,6 @@ class CairoXlib < Formula
   depends_on "pixman"
   depends_on :x11
 
-  conflicts_with "cairo", :because => "cairo-xlib is just cairo with xlib support enabled."
-
   def install
     if build.head?
       ENV["NOCONFIGURE"] = "1"
