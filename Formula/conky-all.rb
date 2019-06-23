@@ -44,7 +44,7 @@ class ConkyAll < Formula
               -DCMAKE_BUILD_TYPE=Release            \
               -DCMAKE_INSTALL_PREFIX=#{prefix}"
       
-      system "make", "-j4", "install"
+      system "make", "install"
   end
 
   test do
