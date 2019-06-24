@@ -25,6 +25,8 @@ matrix:
         - brew install conky-all      
 
 before_install:
+  - export HOMEBREW_NO_AUTO_UPDATE=1
+
 # install our homebrew tap
   - brew tap Conky-for-macOS/homebrew-formulae
 
