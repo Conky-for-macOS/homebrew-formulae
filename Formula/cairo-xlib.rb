@@ -30,13 +30,15 @@ class CairoXlib < Formula
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--with-x",
+                          "--enable-xlib=yes",
+                          "--enable-xlib-xrender=yes",
+                          "--enable-xcb=yes",
                           "--enable-gobject=yes",
+                          "--enable-xlib-xcb=yes",
+                          "--enable-xcb-shm=yes",
                           "--enable-svg=yes",
                           "--enable-tee=yes",
-                          "--enable-quartz-image",
-                          "--enable-xcb=no",
-                          "--enable-xlib=yes",
-                          "--enable-xlib-xrender=no"
+                          "--enable-quartz-image"
     system "make", "-j4", "install"
   end
 
