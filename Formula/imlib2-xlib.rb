@@ -1,4 +1,4 @@
-class Imlib2 < Formula
+class Imlib2Xlib < Formula
   desc "Image loading and rendering library"
   homepage "https://sourceforge.net/projects/enlightenment/"
   url "https://downloads.sourceforge.net/project/enlightenment/imlib2-src/1.5.1/imlib2-1.5.1.tar.bz2"
@@ -25,6 +25,7 @@ class Imlib2 < Formula
       --prefix=#{prefix}
       --enable-amd64=no
       --without-id3
+      --with-x
     ]
 
     system "./configure", *args
