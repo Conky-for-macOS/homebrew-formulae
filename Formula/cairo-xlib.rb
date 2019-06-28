@@ -29,7 +29,7 @@ class CairoXlib < Formula
 
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
-                          "--enable-gobject=no",
+                          "--enable-gobject=yes",
                           "--enable-svg=yes",
                           "--enable-tee=yes",
                           "--enable-quartz-image",
