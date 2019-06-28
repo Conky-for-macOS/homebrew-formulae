@@ -29,6 +29,7 @@ class CairoXlib < Formula
 
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
+                          "--with-x",
                           "--enable-gobject=yes",
                           "--enable-svg=yes",
                           "--enable-tee=yes",
