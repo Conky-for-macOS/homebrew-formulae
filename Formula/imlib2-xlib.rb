@@ -12,6 +12,8 @@ class Imlib2Xlib < Formula
   depends_on "libtiff"
   depends_on :x11
 
+  keg_only "An imlib2 installation may already be present."
+
   def install
     args = %W[
       --disable-dependency-tracking
