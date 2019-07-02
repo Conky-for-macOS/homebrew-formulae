@@ -21,6 +21,10 @@ class CairoXlib < Formula
 
   keg_only "A cairo installation may already be present."
 
+  bottle do
+      sha256 "52228fbe6c454519151628dd0f49038737d45fabdc003567df112dfb4e7eb4bf" => :mojave
+  end
+
   def install
     if build.head?
       ENV["NOCONFIGURE"] = "1"
