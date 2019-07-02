@@ -22,7 +22,7 @@ class CairoXlib < Formula
   keg_only "A cairo installation may already be present."
 
   bottle do
-      root_url "https://github.com/Conky-for-macOS/homebrew-formulae/blob/master/Bottles"
+      root_url "https://github.com/npyl/npyl.github.io/raw/master/Projects/Bottles"
       sha256 "52228fbe6c454519151628dd0f49038737d45fabdc003567df112dfb4e7eb4bf" => :mojave
   end
 
