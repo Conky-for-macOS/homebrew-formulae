@@ -12,7 +12,7 @@ class ConkyAll < Formula
   depends_on "gettext"
   depends_on "lua"
   depends_on "curl"
-  depends_on "imlib2"
+  depends_on "imlib2-xlib"
   depends_on "pkg-config"
   depends_on "libircclient"
   depends_on "libmicrohttpd"
