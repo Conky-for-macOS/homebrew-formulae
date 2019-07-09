@@ -1,5 +1,5 @@
 # This script should test compilation of conky and conky-all
-# xcode 9.4 and xcode 10.1
+# on 10.13 (xcode9.4) and 10.14 (xcode10.2)
 
 language: c
 matrix:
