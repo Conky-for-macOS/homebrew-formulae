@@ -16,11 +16,11 @@ class Imlib2Xlib < Formula
 
   def install
     args = %W[
+      --with-x
       --disable-dependency-tracking
       --prefix=#{prefix}
       --enable-amd64=no
       --without-id3
-      --with-x
     ]
 
     system "./configure", *args
