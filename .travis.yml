@@ -22,7 +22,8 @@ matrix:
     - os: osx
       osx_image: xcode10.2
       script:
-        - brew install conky-all      
+        - brew install conky-all
+	- brew unlink python@2
 
 before_install:
 # install our homebrew tap
