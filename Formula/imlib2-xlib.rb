@@ -10,7 +10,7 @@ class Imlib2Xlib < Formula
   depends_on "jpeg"
   depends_on "libpng"
   depends_on "libtiff"
-  depends_on :x11
+  depends_on "xquartz"
 
   keg_only "An imlib2 installation may already be present."
 
