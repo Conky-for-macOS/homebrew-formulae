@@ -17,7 +17,7 @@ class CairoXlib < Formula
   depends_on "glib"
   depends_on "libpng"
   depends_on "pixman"
-  depends_on :x11
+  depends_on :libx11
 
   keg_only "A cairo installation may already be present."
 
